@@ -79,8 +79,7 @@ console.log("Seu nome é:", nomePessoa)
 console.log("Sua idade é:", idadePessoa)
 console.log("É maior de idade?", idadePessoa >= maiorIdade)
 console.log("Sua idade em 2050 será:", idadeFuturo)
-console.log("Sua idade será:", maiorIdade >= idadePessoa)*/
-
+console.log("Sua idade será:", maiorIdade >= idadePessoa)
 //Exercicio 4    1)
 
 const bool1 = true
@@ -96,14 +95,18 @@ console.log("b. ", resultado) // false
 resultado = !resultado && (bool1 || bool2)
 console.log("c. ", resultado) // true
 
-console.log("d. ", typeof resultado) // boolean
+console.log("d. ", typeof resultado) // boolean*/
+
 
 //Exercicio 5    2)
 
-const primeiroNumero = prompt("Digite um numero!")
-const segundoNumero = prompt("Digite outro numero!")
+let primeiroNumero = prompt("Digite um numero?")
+let segundoNumero =  prompt("Digite outro numero?")
+primeiroNumero = Number(primeiroNumero)
+segundoNumero = Number(segundoNumero)
 
-
+let soma = primeiroNumero + segundoNumero
+console.log("A soma é", soma)
 
 
 
