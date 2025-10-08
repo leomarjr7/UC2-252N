@@ -69,7 +69,7 @@ console.log(fraseCenoura.includes("batata"))
 de caracteres (chars1) por alguma outra coisa (chars2)*/
 
 /*const novaFrase = fraseCenoura.replaceAll("cenoura", "batata")
-console.log(novaFrase)*/
+console.log(novaFrase)
 
 //Exercicio 2
 
@@ -78,5 +78,73 @@ const fraseMaiuscula = escrevaFrase.toUpperCase()
 const novaFrase = escrevaFrase.replaceAll("o", "i")
 console.log(fraseMaiuscula)
 console.log(novaFrase)
-console.log(escrevaFrase.length)
+console.log(escrevaFrase.length)*/
+
+/*const listaCompras = ["Abacate", "Banana", "Tomate"]
+console.log(listaCompras[0])
+
+const racasCachorros = ["Yorkshire", "Pitbull", "Pastor Alemão", "Labrador", "Bulldog"]
+const escolhaNumero = prompt("Escolha um número de 0 a 4")
+console.log(racasCachorros[escolhaNumero])
+
+const pokemon = ["bulbasauro", "squirtle", "charmander"]
+const escolhaNumero2 = prompt("Escolha um número de 0 a 4")
+console.log(pokemon[escolhaNumero2].length)
+
+
+/*O método includes(elemento) determina se um array contém um determinado
+elemento, retornando true ou false*/
+
+/*const comidasFavoritas = ["Pizza","Sushi","Churrasco","Lasanha"]
+console.log(comidasFavoritas.includes("Sushi"), comidasFavoritas.includes("Feijão"))
+
+
+//O método push(elemento) adiciona um ou mais elementos ao final de um array
+
+const numeros = [1, 2, 3]
+numeros.push(4)
+console.log(numeros)
+numeros.push(5,6,7)
+console.log(numeros)
+
+//O método pop() remove o último elemento de um array
+
+const meusPeixes=["palhaço", "mandarim", "esturjão"]
+meusPeixes.pop()
+console.log(meusPeixes)
+meusPeixes.pop()
+console.log(meusPeixes)
+
+//
+
+const letras = ["A", "B", "C", "D", "E", "F", "G", "H"]
+letras.splice(3, 2) 
+console.log(letras)*/
+
+const numeros = ["1", "2", "3", "4", "5", "6"]
+console.log(numeros.length)
+numeros.push("7")
+numeros.splice(3, 2) 
+console.log(numeros)
+
+
+let array
+console.log("a.", array) // undefined
+
+
+array = null
+console.log("b.", array) // null
+
+array = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] 
+console.log("c.", array.length) // 11
+
+let i = 0
+console.log("d.", array[i]) // 3
+
+array[i+1] = 19
+console.log("e.", array) // [3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+const valor = array[i+6]
+console.log("f.", valor) // 9
+
 
