@@ -119,7 +119,7 @@ console.log(meusPeixes)
 
 const letras = ["A", "B", "C", "D", "E", "F", "G", "H"]
 letras.splice(3, 2) 
-console.log(letras)*/
+console.log(letras)
 
 const numeros = ["1", "2", "3", "4", "5", "6"]
 console.log(numeros.length)
@@ -145,6 +145,50 @@ array[i+1] = 19
 console.log("e.", array) // [3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 const valor = array[i+6]
-console.log("f.", valor) // 9
+console.log("f.", valor)//9   
 
 
+//Exercicio 3
+
+const frase = prompt("Digite uma frase:")
+console.log(frase.toUpperCase().replaceAll("A","I"), frase.length)
+
+
+//Exercicio 4
+
+const nomeUsuario = prompt("Qual é o seu nome?")
+const emailUsuario = prompt("Qual é o seu e-mail?")
+const frase1 = `Olá, ${ nomeUsuario }! O e-mail ${ emailUsuario } foi cadastrado com sucesso. Seja bem-vinda(o)!`
+console.log(frase1)
+
+//Exercicio 5
+
+const qualComida = prompt("Qual é a sua comida preferida?")
+const frase3 = ("Essas são as minhas comidas preferidas: ")
+let comidasFavoritas = ["Sushi", "Pizza", "Churrasco", "Hamburguer", "Açaí"]
+comidasFavoritas[1] = qualComida
+console.log(frase3)
+console.log(qualComida)
+console.log(comidasFavoritas)
+
+
+//Exercicio 6
+
+const listaDeTarefas = []
+let tarefasDia1 = prompt("Me diga uma tarefa para realizar no dia de hoje")
+let tarefasDia2 = prompt("Me diga uma tarefa para realizar no dia de hoje")
+let tarefasDia3 = prompt("Me diga uma tarefa para realizar no dia de hoje")
+listaDeTarefas.push(tarefasDia1, tarefasDia2, tarefasDia3)
+console.log(listaDeTarefas)
+
+const indice = prompt("Digite o indice da tarefa que ja realizou(0, 1, 2)")
+listaDeTarefas.splice(indice, 1)
+console.log(listaDeTarefas)*/
+
+//Exercicio 7
+
+let frutas = ["Banana", "Mamão", "Abacaxi", "Limão", "Kiwi"]
+let ondeTemAbacaxi = frutas.indexOf("Abacaxi")
+let tamanhoArray = frutas.length
+console.log("Onde está o abacaxi:", ondeTemAbacaxi)
+console.log(frutas.length)
