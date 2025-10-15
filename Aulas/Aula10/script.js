@@ -158,7 +158,7 @@ console.log(frase.toUpperCase().replaceAll("A","I"), frase.length)
 
 const nomeUsuario = prompt("Qual é o seu nome?")
 const emailUsuario = prompt("Qual é o seu e-mail?")
-const frase1 = `Olá, ${ nomeUsuario }! O e-mail ${ emailUsuario } foi cadastrado com sucesso. Seja bem-vinda(o)!`
+const frase1 = "Olá," + nomeUsuario + "O e-mail" + emailUsuario + "foi cadastrado com sucesso. Seja bem-vinda(o)"
 console.log(frase1)
 
 //Exercicio 5
