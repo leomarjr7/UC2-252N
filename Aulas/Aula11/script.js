@@ -100,7 +100,7 @@ switch(paisOrigem){
         console.log("entrou no case1")
         break
         case 'EUA':
-            console.log("Nacionalidade Brasileira")
+            console.log("Nacionalidade Norte Americana")
             console.log("entrou no case2")
             break
             case 'India':
@@ -109,7 +109,7 @@ switch(paisOrigem){
             break 
             default :
             console.log("Nacionalidade não enconntrada")
-        } */
+        } 
 
         let pokemon = prompt("Escolha um pokemon entre Bulbasaur, Charmander, Squirtle")
 
@@ -121,8 +121,39 @@ switch(paisOrigem){
         console.log("Charmander:Fogo")
         break
         case 'squirtle':
-            console.log("Squirtle :Água")
+            console.log("Squirtle:Água")
         break
     default:
         console.log("Pokemon não encontrado")
-        }
+        }*/
+
+        let chapeuSeletor = prompt("Fale o nome de uma aluna de Hogwarts e descubra a casa dela")
+
+        switch(chapeuSeletor.toLowerCase()){
+            case 'hermione':
+                console.log("Hermione: Grifinória")  
+            break
+        case 'ana':
+        console.log("Ana: Lufa-Lufa")
+        break
+        case 'luna':
+            console.log("Luna: Cornival")
+        break
+        case 'narcisa':
+            console.log("Narcisa: Sonserina")
+        break
+        case 'harry':
+            console.log("Harry Potter: Grifinória")
+        break
+        case 'draco':
+            console.log("Draco Malfoy: Sonserina")
+        break
+        case 'rony':
+            console.log("Rony Weasley: Grifinória")
+        break
+        case 'neville':
+            console.log("Neville Longbottom: Grifinória")
+        break
+    default:
+        console.log("Aluna não encontrado")
+        } 
