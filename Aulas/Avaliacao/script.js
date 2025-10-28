@@ -55,3 +55,4 @@ if ((!temGravetos || nivelMesaCraft < 2) &&
     console.log("Você não pode craftar uma picareta de diamnete!")
 }
 //Aqui depende dos recursos que o jogador tem para saber se ele pode ou não craftar a picareta de diamante
+
