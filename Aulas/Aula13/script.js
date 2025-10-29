@@ -50,7 +50,7 @@ for(let i = 0; i < 5; i++){
     valor += i 
 }
 console.log(valor)
-//Ele soma todos os valores de 0 a 4 e mostra o resultado final
+//Ele soma todos os valores de 0 a 4 e mostra o resultado final que é 10
 
 //Interpretação de código 2
 
@@ -61,13 +61,13 @@ for (let numero of lista) {
     }
 }
 //a)Ele vai mostrar todos os numeros maiores que 18 do array
-*/
+
 //Interpretação de código 3
 
 const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
 let quantidadeAtual = 0
 while(quantidadeAtual < quantidadeTotal){
-    let linha = ""
+    let linha = " "
     for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
         linha += "*"
     }
@@ -79,4 +79,29 @@ while(quantidadeAtual < quantidadeTotal){
 let bichinhos = Number(prompt("Quantos animais de estimação você tem?"))
 if(bichinhos===0){
 console.log("Que pena! Você pode adotar um pet!")
-} else if(bichinhos>0)
+} else if(bichinhos>0){
+    let nomesBichinhos = []
+    for(let i = 0; i<bichinhos; i++){
+        let nomes = prompt("Digite o nome do seu pet:")
+        nomesBichinhos.push(nomes)
+    }
+    console.log("Os nomes dos seus pets são:", nomesBichinhos)
+}
+//Ele vai perguntar quantos bichinhos o usuario tem, se for 0 ele mostra uma mensagem sugerindo adotar um pet
+*/
+let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45 ,50, 55 ,60, 65 ,70]
+for (let numero of arrayOriginal) {
+console.log(numero) 
+} for (let numero of arrayOriginal) {
+console.log(numero/10) 
+} 
+    
+let novoArray = [10, 20, 30, 40, 50, 60, 70]
+for (let i = 0; i<7; i++)
+if(arrayOriginal[i] %2===0) {
+console.log(arrayOriginal[i])
+}
+
+let arrayString = ["10", "20", "30", "40", "50", "60", "70"]
+    
+    
