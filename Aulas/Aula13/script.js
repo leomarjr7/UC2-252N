@@ -62,6 +62,8 @@ for (let numero of lista) {
 }
 //a)Ele vai mostrar todos os numeros maiores que 18 do array
 
+//b)Nao, para descobrir poderiamos usar o indexOf(). Ex: console.log(lista.indexOf(15)) //3
+
 //Interpretação de código 3
 
 const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
@@ -86,22 +88,35 @@ console.log("Que pena! Você pode adotar um pet!")
         nomesBichinhos.push(nomes)
     }
     console.log("Os nomes dos seus pets são:", nomesBichinhos)
-}
+}*/
 //Ele vai perguntar quantos bichinhos o usuario tem, se for 0 ele mostra uma mensagem sugerindo adotar um pet
-*/
+
 let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45 ,50, 55 ,60, 65 ,70]
 for (let numero of arrayOriginal) {
 console.log(numero) 
-} for (let numero of arrayOriginal) {
+} 
+for (let numero of arrayOriginal) {
 console.log(numero/10) 
 } 
     
-let novoArray = [10, 20, 30, 40, 50, 60, 70]
+let arrayPares = [10, 20, 30, 40, 50, 60, 70]
 for (let i = 0; i<7; i++)
 if(arrayOriginal[i] %2===0) {
 console.log(arrayOriginal[i])
 }
 
 let arrayString = ["10", "20", "30", "40", "50", "60", "70"]
-    
-    
+    for (let i=0; arrayOriginal.length; i++){
+        console.log("O elemento do índex", i, "é:", arrayOriginal[i])
+    }
+let maiorNum = arrayOriginal[0]
+let menorNum = arrayOriginal[0]
+for (let numero of arrayOriginal){
+if (numero>maiorNum){
+maiorNum = numero
+} else if (numero<menorNum){
+    menorNum = numero
+}
+} 
+console.log("O maior número é:", maiorNum)
+console.log("O menor número é:", menorNum)
