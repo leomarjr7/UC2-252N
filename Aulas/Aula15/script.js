@@ -86,10 +86,11 @@ const resultadoSoma = somaNumeros()
 console.log(resultadoSoma)
 
 
-let array = [10, 20, 30, 40, 50]
-function novoArray() {
-    return array [0] / 2
-    //Falta fazer um Leomar
+let arrayN = [10, 20, 30, 40, 50]
+function divisao(array) {
+    let novoArray = []
+    novoArray.push(array[0] / 2)
+    novoArray.push(array[array.length-1]/2)
+        return novoArray
 }
-const resultado = novoArray()
-console.log(resultado)
+console.log(divisao(arrayN))
