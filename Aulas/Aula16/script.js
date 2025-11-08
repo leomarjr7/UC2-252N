@@ -1,4 +1,4 @@
-const soma = function( ) {
+/*const soma = function( ) {
     const num1 = 5
     const num2 = 6
     const resultado = num1 + num2
@@ -22,3 +22,33 @@ const determinaMonstro = function(temPeleGelada, transformaComLuaCheia, brilhaAo
     } 
 }
 determinaMonstro(true, false, true, true, false)
+
+function minhaFuncao(variavel) {
+    return variavel * 5 
+}
+
+console.log(minhaFuncao(2))
+console.log(minhaFuncao(10))
+//a)minhaFuncao(2) = 10 minhaFuncao(10) = 50
+
+//b)Nao aparece nada pois o console.log nao foi chamado para exibir o valor retornado pela funcao.
+
+
+let textoDoUsuario = prompt("Insira um texto");
+
+const outraFuncao = function(texto) {
+return texto.toLowerCase().includes("cenoura")
+}
+
+const resposta = outraFuncao(textoDoUsuario)
+console.log(resposta)
+
+let texto = function() {
+    return "Eu sou Leomar, tenho 17 anos, moro em Rio Grande do Sul e sou estudante."
+}
+console.log(texto())*/
+
+
+
+
+
