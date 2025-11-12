@@ -64,3 +64,29 @@ console.log("O filme é:", elenco.filme)
 console.log("O tema do filme é:", elenco["tema"])
 console.log("O diretor do filme é:", elenco.direcao)
 console.log("O elenco do filme é:", elenco.elenco[0])
+
+
+const amigo = {
+    nome : "Vágner",
+    idade : "17 anos",
+    comidas :
+       ["pizza",
+       "sorvete" ,
+       "churrasco"],
+    melhorAmigo : "Deus",
+idadeMelhorAmigo : "Eterna"
+    
+    }
+    
+console.log("O nome da pessoa é", amigo.nome, "ele tem", amigo.idade, "e suas comidas favoritas são", amigo.comidas[0], ",", amigo.comidas[1], "e", amigo.comidas[2])
+console.log("Seu melhor amigo se chama", amigo.melhorAmigo, "e sua idade é", amigo.idadeMelhorAmigo)
+
+
+const naruto = [
+{personagem: "Sasuke Uchiha", idade: "17", estilo: "Ninjutsu", jutsus: ["Chidori", "Amaterasu" , "Susanoo"], poderes: ["Sharingan", "Rinnegan"]},
+{personagem: "Naruto", idade: "17", estilo: "Ninjutsu", jutsus: ["Rasengan", "Mil clones da sombra" , "Harém"], poderes: ["Kurama", "Modo Sábio"]},
+{personagem: "Itachi", idade: "21", estilo: "Genjutsu", jutsus: ["Tsukoyomi", "Amaterasu" , "Susanoo"], poderes: ["Mangekyo Sharingan", "Inteligência"]},
+]
+function adicionarPersonagem(personagem, idade, estilo, jutsus, poderes) {
+    
+}
