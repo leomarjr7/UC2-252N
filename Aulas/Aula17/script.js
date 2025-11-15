@@ -82,11 +82,41 @@ console.log("O nome da pessoa é", amigo.nome, "ele tem", amigo.idade, "e suas c
 console.log("Seu melhor amigo se chama", amigo.melhorAmigo, "e sua idade é", amigo.idadeMelhorAmigo)
 
 
-const naruto = [
-{personagem: "Sasuke Uchiha", idade: "17", estilo: "Ninjutsu", jutsus: ["Chidori", "Amaterasu" , "Susanoo"], poderes: ["Sharingan", "Rinnegan"]},
-{personagem: "Naruto", idade: "17", estilo: "Ninjutsu", jutsus: ["Rasengan", "Mil clones da sombra" , "Harém"], poderes: ["Kurama", "Modo Sábio"]},
-{personagem: "Itachi", idade: "21", estilo: "Genjutsu", jutsus: ["Tsukoyomi", "Amaterasu" , "Susanoo"], poderes: ["Mangekyo Sharingan", "Inteligência"]},
+const personagensNaruto = [
+{personagem: "Sasuke Uchiha", 
+idade: "17", 
+estilo: "Ninjutsu", 
+jutsus: ["Chidori", "Amaterasu" , "Susanoo"], 
+poderes: ["Sharingan", "Rinnegan"]},
+{personagem: "Naruto", 
+idade: "17", 
+estilo: "Ninjutsu", 
+jutsus: ["Rasengan", "Mil clones da sombra" , "Harém"], 
+poderes: ["Kurama", "Modo Sábio"]},
+{personagem: "Itachi", 
+idade: "21", 
+estilo: "Genjutsu", 
+jutsus: ["Tsukoyomi", "Amaterasu" , "Susanoo"], 
+poderes: ["Mangekyo Sharingan", "Inteligência"]},
 ]
-function adicionarPersonagem(personagem, idade, estilo, jutsus, poderes) {
+const personagem = {
+    nome : "Obito",
+idade : "25",
+estilo : "Ninjutsu",
+jutsus : ["Kamui", "Bola de fogo"],
+poderes : ["Sharingan", "Rinnegan"]}
+
+function adicionarPersonagem() {
+    naruto.push(personagem)
+    console.log("O personagem", personagem.nome , "foi adicionado!")
+}
+adicionarPersonagem()
+
+function buscarPersonagem(nomeBuscado) {
+    function personagem(personagem){
+        return personagem.nome.toLowerCase() === nomeBuscado.toLowerCase()
+    }
+    const personagemEncontrado = personagensNaruto.find(personagem)
     
 }
+buscarPersonagem()
