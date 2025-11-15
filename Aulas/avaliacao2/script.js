@@ -82,3 +82,6 @@ function adicionarPersonagem() {
     console.log("O personagem", personagem5.nome , "foi adicionado!")
 }
 adicionarPersonagem()
+// aq removemos o personagem no indice 2 e colocamos 1,2 por que ele ira retirar 1 no indice 2
+let remover = arrayPersonagens.splice(1,2)
+console.log(remover)
