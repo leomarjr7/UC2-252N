@@ -85,3 +85,36 @@ adicionarPersonagem()
 // aq removemos o personagem no indice 2 e colocamos 1,2 por que ele ira retirar 1 no indice 2
 let remover = arrayPersonagens.splice(1,2)
 console.log(remover)
+// função para listar os personagens
+function listarPersonagens() {
+    console.log("lista de personagens:");
+
+    for (let i = 0; i < arrayPersonagens.length; i++) {
+        console.log(arrayPersonagens[i].nome);
+    }
+}
+
+listarPersonagens() // mostra seus status usando função e for 
+function verificarStatus(nomeBuscado) {
+    let encontrou = false
+
+    for (let i = 0; i < arrayPersonagens.length; i++) {
+
+        
+
+            console.log("status dos personagens:")
+            console.log("Nome: " + arrayPersonagens[i].nome)
+            console.log("hp: " + arrayPersonagens[i].hp)
+            console.log("Habilidades:")
+
+            // mostra suas habilidades disponiveis
+            for (let j = 0; j < arrayPersonagens[i].habilidades.length; j++) {
+                console.log("- " + arrayPersonagens[i].habilidades[j])
+            }
+
+            encontrou = true
+        }
+    }
+
+
+verificarStatus()
